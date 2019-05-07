@@ -2,6 +2,14 @@
 
 https://www.cloudera.com/documentation/enterprise/6/6.2/topics/installation.html
 
+
+| Node  |  OS | Core  | Memory  | Comment  |
+|---|---|---|---|---|
+| Cloudera Manager Server  |  CentOS |  4C | 10G  |   |
+|  Node01 |  CentOS |  2C | 6G  |   |
+|  Node02 |  CentOS |  2C | 6G  |   |
+|  Node03 |  CentOS |  2C | 6G  |   |
+
 ### 自动化配置4node
 
 自动化配置如下：
