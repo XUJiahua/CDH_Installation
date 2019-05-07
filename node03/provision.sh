@@ -9,7 +9,7 @@ systemctl enable ntp
 hwclock --systohc
 
 # Configure Network Names
-hostnamectl set-hostname node02.example.com
+hostnamectl set-hostname node03.example.com
 echo -e "192.168.33.10  cm.example.com\n192.168.33.11  node01.example.com\n192.168.33.12  node02.example.com\n192.168.33.13  node03.example.com\n" | tee -a /etc/hosts
 mkdir -p /etc/sysconfig
-echo -e "HOSTNAME=node02.example.com\n" > /etc/sysconfig/network
+echo -e "HOSTNAME=node03.example.com\n" > /etc/sysconfig/network

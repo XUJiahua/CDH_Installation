@@ -2,11 +2,11 @@
 service ufw stop
 
 # Enable an NTP Service
-apt-get install -y ntp
+apt-get install -y ntp ntpdate
 echo -e "server 0.pool.ntp.org\nserver 1.pool.ntp.org\nserver 2.pool.ntp.org\n" > /etc/ntp.conf
-### TODO: failed
-systemctl start ntpd
-systemctl enable ntpd
+systemctl start ntp
+systemctl enable ntp
+hwclock --systohc
 
 # Configure Network Names
 hostnamectl set-hostname node01.example.com
