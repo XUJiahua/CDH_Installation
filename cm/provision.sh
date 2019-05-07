@@ -31,7 +31,11 @@ rpm --import https://archive.cloudera.com/cm6/6.2.0/redhat7/yum/RPM-GPG-KEY-clou
 yum install -y oracle-j2sdk1.8
 
 # Step 3: Install Cloudera Manager Server
+# yum install cloudera-manager-daemons cloudera-manager-agent cloudera-manager-server
 
 # Step 4: Install and Configure Databases
-# apt-get install mysql-server
-# service mysql stop
+# wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+# rpm -ivh mysql-community-release-el7-5.noarch.rpm
+# yum update
+# yum install mysql-server
+# systemctl start mysqld
